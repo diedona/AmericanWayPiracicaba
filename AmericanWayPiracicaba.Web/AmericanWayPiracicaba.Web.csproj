@@ -321,6 +321,8 @@
     <Content Include="Content\plugins\lightbox\js\lightbox.min.map" />
     <Content Include="Content\plugins\lightbox\README.markdown" />
     <None Include="Project_Readme.html" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
