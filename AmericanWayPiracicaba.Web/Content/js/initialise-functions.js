@@ -236,9 +236,8 @@ function initialise_window_load_functions()
     fade_in_gallery_images();
 
 }
-// end: initialise_window_load_functions()
 
 $(window).load(function()
 {
-    initialise_window_load_functions();
+    //initialise_window_load_functions();
 });

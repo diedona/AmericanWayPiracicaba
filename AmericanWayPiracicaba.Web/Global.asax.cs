@@ -19,7 +19,7 @@ namespace AmericanWayPiracicaba.Web
 
             BundleTable.Bundles.IgnoreList.Clear();
 
-            BundleTable.EnableOptimizations = false;
+            BundleTable.EnableOptimizations = true;
         }
     }
 }

@@ -10,12 +10,12 @@ namespace AmericanWayPiracicaba.Web
         {
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                 "~/Content/bootstrap/css/bootstrap.min.css",
+                "~/Content/css/base.css",
                 "~/Content/plugins/font-awesome/css/font-awesome.min.css",
                 "~/Content/plugins/owl-carousel/owl.carousel.css",
                 "~/Content/plugins/owl-carousel/owl.transitions.css",
                 "~/Content/plugins/owl-carousel/owl.theme.css",
                 "~/Content/plugins/lightbox/css/lightbox.css",
-                "~/Content/css/base.css",
                 "~/Content/css/style-theme.css",
                 "~/Content/css/fonts/stylesheet.css",
                 "~/Content/css/style-colours.css",
@@ -32,6 +32,7 @@ namespace AmericanWayPiracicaba.Web
                 "~/Content/plugins/owl-carousel/owl.carousel.min.js",
                 "~/Content/plugins/lightbox/js/lightbox.min.js",
                 "~/Content/plugins/masonry/masonry.pkgd.min.js",
+                //"~/Content/plugins/pace/pace.min.js",
                 "~/Content/js/functions.js",
                 "~/Content/js/initialise-functions.js"
             ));
