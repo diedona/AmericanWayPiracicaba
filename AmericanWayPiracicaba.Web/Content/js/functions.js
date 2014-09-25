@@ -897,8 +897,23 @@ function mainmenu_search_icon()
 function SetActiveMenu(menu)
 {
     var ObjMenu = $("ul#main-menu");
+    var ObjCurrentMenu = ObjMenu.find("[data-name='" + menu + "']");
+    var CurrentClass = ObjCurrentMenu.data("color");
 
+    //tirando o ativo de todos os menus
     ObjMenu.find('li').removeClass('current-menu-ancestor');
+    //ajustando o menu ativo
+    ObjCurrentMenu.addClass('current-menu-ancestor');
 
-    ObjMenu.find("[data-name='"+menu+"']").addClass('current-menu-ancestor');
+    //pegando todas as classes existentes
+    var Classes = [];
+    ObjMenu.find('li').each(function (i, o) {
+        Classes.push($(o).data('color'));
+    });
+
+    //retirando todas do body
+    $('body').removeClass(Classes.splice(' '));
+
+    //colocando a ativa
+    $('body').addClass(CurrentClass);
 }
