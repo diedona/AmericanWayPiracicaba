@@ -893,3 +893,12 @@ function mainmenu_search_icon()
         event.stopPropagation();
     });    
 }
+
+function SetActiveMenu(menu)
+{
+    var ObjMenu = $("ul#main-menu");
+
+    ObjMenu.find('li').removeClass('current-menu-ancestor');
+
+    ObjMenu.find("[data-name='"+menu+"']").addClass('current-menu-ancestor');
+}

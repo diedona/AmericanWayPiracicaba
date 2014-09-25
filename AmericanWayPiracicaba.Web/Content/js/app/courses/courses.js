@@ -1,0 +1,5 @@
+﻿$(function () {
+
+    SetActiveMenu('Cursos');
+
+})
